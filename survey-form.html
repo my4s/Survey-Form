@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <h1 id="title">Ice Cream Survey Form</h1>
+    <p id="description">Thank you for taking the time to answer this Survey! Please fill out this form with the required information.</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Age
+(optional): <input id="number" type="number" placeholder="Age" min="10" max="99" /></label>
+</fieldset>
+<fieldset>
+  <label> How much ice cream can you eat? 
+          <select id="dropdown">
+            <option value="">( please select one)</option>
+            <option value="1">NONE! eww-</option>
+            <option value="2">1 scoop</option>
+            <option value="3">2 scoops</option>
+            <option value="4">THE WHOLE TUB</option>
+          </select>
+</fieldset>
+<fieldset>
+  <p> Do like ice cream? </p>
+        <label for="question_two"><input class="inline" id="question_two" type="radio" value="1" name="question" type="checkbox" /> Yes! Of course!!</label>
+        <label for="question_three"><input class="inline"  id="question_three" type="radio" value="2" name="question" type="checkbox" /> NO! eww</label>
+</fieldset>
+<fieldset>
+  <p>What's your <strong>favourite</strong> flavour(s)?</p>
+        <label for="question_four"><input class="inline" id="question_four"  value="3" name="questions" type="checkbox" /> Vanilla</label>
+        <label for="question_five"><input class="inline" id="question_five"  value="4" name="questions" type="checkbox" /> Chocolate</label>
+        <label for="question_six"><input class="inline" id="question_six"  value="5" name="questions" type="checkbox" /> Strawberry</label>
+        <label for="question_seven"><input class="inline" id="question_seven"  value="6" name="questions" type="checkbox" /> Mint</label>
+        <label for="question_eight"><input class="inline" id="question_eight"  value="7" name="questions" type="checkbox" /> Butter Pecan</label>
+        <label for="question_nine"><input class="inline" id="question_nine"  value="8" name="questions" type="checkbox" /> Teaberry</label>
+        <label for="question_ten"><input class="inline" id="question_ten"  value="9" name="questions" type="checkbox" /> Eggnog</label>
+        <label for="question_eleven"><input class="inline" id="question_eleven"  value="10" name="questions" type="checkbox" /> Matcha</label>
+        <label for="question_twelve"><input class="inline" id="question_twelve"  value="11" name="questions" type="checkbox" /> You forgot it!</label>
+</fieldset>
+<fieldset>
+  <label> Any comments or suggestions?
+          <textarea placeholder="Enter you comment here..."></textarea>
+        </label>
+</fieldset>
+  <label>
+    <input id="submit" type="submit" value="Submit" />
+  </label>
+  </form>
+  <body>
+</html>
